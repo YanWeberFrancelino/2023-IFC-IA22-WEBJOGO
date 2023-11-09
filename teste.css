@@ -1,0 +1,197 @@
+body {
+    background-color: #00b4ff;
+    font: tahoma;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+main div.text p>*>.current {
+  background-color: blue;
+  color: black;
+}
+
+main .score {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+main div.text p>*>* {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@keyframes animatedCloud {
+    0% {
+        transform: translateX(100%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(-1000px);/* Retorna a opacidade ao valor original */
+    }
+}
+
+@-webkit-keyframes animatedCloud {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.x1 {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3); 
+}
+
+.x2 {
+    animation: animatedCloud 40s linear infinite;
+    transform: scale(0.2); 
+}
+
+.x3 {
+    animation: animatedCloud 10s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.25); 
+}
+
+.x4 {
+    animation: animatedCloud 18s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.15); 
+}
+
+.x5 {
+    animation: animatedCloud 25s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.18); 
+}
+
+.x6 {
+    animation: animatedCloud 25s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.25); 
+}
+
+.x7 {
+    animation: animatedCloud 30s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.2); 
+}
+
+.x8 {
+    animation: animatedCloud 18s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.15);
+}
+
+.x9 {
+    animation: animatedCloud 20s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.18); 
+}
+
+.x10 {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3); 
+}
+
+.cloud {
+    background: white;
+    background: linear-gradient(top, white 5%, #f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#f1f1f1', GradienteType=0);
+    border-radius: 100px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    height: 50px; 
+    position: relative;
+    width: 175px;
+    margin-top: -80px; 
+    margin-bottom: 50px; 
+}
+
+.cloud:after,
+.cloud:before {
+    background: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.cloud:after {
+    border-radius: 50px; 
+    height: 50px; 
+    left: 25px; 
+    top: -25px; 
+    width: 50px; 
+}
+
+.cloud:before {
+    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+    right: 25px; 
+    top: -45px;
+}
+
+.x-background {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+
+header{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+
+main div.text {
+  background-image: linear-gradient(3600deg, rgba(86, 86, 86, 0.6) 0, rgba(0, 85, 122, 0.275) 100%);
+  margin: 4vw;
+  border-radius: 10px;
+  padding: 0.5px;
+  height: 40%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+main div.score {
+  background-image: linear-gradient(3600deg, rgba(86, 86, 86, 0.6) 0, rgba(0, 85, 122, 0.275) 100%);
+  margin: 1vw;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+        .div-verde {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: green;
+        }

@@ -1,0 +1,327 @@
+body {
+    background-color: #00b4ff;
+    font: tahoma;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main div.text p>*>.current {
+  background-color: blue;
+  color: black;
+}
+
+main div.text p>*>* {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+:root {
+  --background-main: #00b4ff;
+  --text-main: #ffffff;
+  --text-shadow: rgba(0, 0, 0, 0.7);
+  --neon-purple: rgba(180, 120, 240, 0.8);
+  --neon-shadow: rgba(180, 120, 240, 0.9);
+  --sz-icon: 30px;
+  --footer-background: linear-gradient(to right, #75ffa3 0%, #538739 100%);
+}
+
+main {
+  position: relative;
+}
+
+main div.text {
+  background-image: linear-gradient(360deg, rgba(86, 86, 86, 0.6), rgba(0, 85, 122, 0.275));
+  margin: 4vw;
+  border-radius: 10px;
+  box-shadow: 0 0 30px var(--neon-shadow), inset 0 0 10px var(--neon-shadow);
+  padding: 0.5rem;
+  height: 25%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--footer-background);
+  color: rgb(255, 25, 255);
+  font-size: 1.5rem;
+  box-shadow: 0 2px 4px var(--text-shadow);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 2rem;
+  border-radius: 15px; 
+  background: var(--neon-purple);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 30px var(--neon-shadow), inset 0 0 10px var(--neon-shadow);
+  z-index: 999;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px var(--neon-shadow), inset 0 0 10px var(--neon-shadow);
+  }
+  to {
+    box-shadow: 0 0 20px var(--neon-shadow), inset 0 0 20px var(--neon-shadow);
+  }
+}
+
+header {
+  display: none;
+}
+
+.main div.text p>*>.current {
+  background-color: blue;
+  color: black;
+}
+
+.main div.text p>*>* {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.inicio {
+  cursor: pointer;
+  z-index: 108020;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed; 
+  top: 0;
+  background: rgba(25, 206, 206, 0.9);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inicio span {
+  transform: translateY(2rem);
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease; 
+}
+
+.inicio span:hover {
+  transform: translateY(1.5rem) scale(1.05); 
+}
+
+.inicio.title {
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #333; 
+  margin-bottom: 1rem; 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.inicio .rules {
+  text-align: justify; 
+  font-size: 1rem; 
+  color: #333; 
+  background: rgba(255, 255, 255, 0.7); 
+  border-radius: 10px;
+  padding: 1rem; 
+  margin: 0.5rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+main div.text p>*>* {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.play-button {
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px; 
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #45a049;
+}
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@keyframes animatedCloud {
+    0% {
+        transform: translateX(100%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(-1000px);
+        opacity: 1; 
+    }
+}
+
+@-webkit-keyframes animatedCloud {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.x1 {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3); 
+}
+
+.x2 {
+    animation: animatedCloud 40s linear infinite;
+    transform: scale(0.2); 
+}
+
+.x3 {
+    animation: animatedCloud 10s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.25); 
+}
+
+.x4 {
+    animation: animatedCloud 18s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.15); 
+}
+
+.x5 {
+    animation: animatedCloud 25s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.18); 
+}
+
+.x6 {
+    animation: animatedCloud 25s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.25); 
+}
+
+.x7 {
+    animation: animatedCloud 30s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.2); 
+}
+
+.x8 {
+    animation: animatedCloud 18s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.15);
+}
+
+.x9 {
+    animation: animatedCloud 20s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.18); 
+}
+
+.x10 {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3); 
+}
+
+.cloud {
+    background: white;
+    background: linear-gradient(top, white 5%, #f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#f1f1f1', GradienteType=0);
+    border-radius: 100px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    height: 50px; 
+    position: relative;
+    width: 175px;
+    margin-top: -80px; 
+    margin-bottom: 50px; 
+}
+
+.cloud:after,
+.cloud:before {
+    background: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.cloud:after {
+    border-radius: 50px; 
+    height: 50px; 
+    left: 25px; 
+    top: -25px; 
+    width: 50px; 
+}
+
+.cloud:before {
+    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+    right: 25px; 
+    top: -45px;
+}
+
+.x-background {
+    animation: animatedCloud 35s linear infinite;
+    animation-delay: -10s;
+    transform: scale(0.3);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
